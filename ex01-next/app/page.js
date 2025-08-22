@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <h1>Lucas Ribeiro D'Azevedo</h1>
+      <h1>Lucas Ribeiro D Azevedo</h1>
       <hr/>
       <img src="/assets/images/image.png"  width="500px"  height="500px"/>
       <hr/>
