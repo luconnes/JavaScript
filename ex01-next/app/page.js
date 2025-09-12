@@ -1,14 +1,35 @@
-import Image from "next/image";
+import { Contador } from "@/components/Contador";
+import { MyButton } from "@/components/MyButton";
+import Link from "next/link";
 
 export default function Home() {
+  let PI = 3.14159;
   return (
     <div>
-      <h1>Lucas Ribeiro D Azevedo</h1>
-      <hr/>
-      <img src="/assets/images/image.png"  width="500px"  height="500px"/>
-      <hr/>
-      <p>Sou estudante de Ciência da Computação, atualmente com experiência em programação (Python, C, Java, SQL), banco de dados e engenharia de software, incluindo metodologias ágeis e gestão de projetos. Também possuo conhecimentos em áreas correlatas como comunicação, UX, vendas e análise de processos, além de Excel intermediário/avançado e especialização em andamento em Power BI. Busco oportunidades para aplicar e expandir essas habilidades, contribuindo com soluções práticas, criativas e orientadas a resultados.</p>
-      
+      <h1>Welcome to my app</h1>
+      <hr />
+      <Link href="/taskList">Task List</Link>
+      <hr />
+      <Link href="/foodList">Food List</Link>
+      <hr />
+      <p>
+        Hello there.
+        <br />
+        <span className="blueText">How do you do?</span>
+      </p>
+      <hr />
+      <Contador />
+      <Contador />
+      <hr />
+      <MyButton />
+      <p>Doing math: {2 * PI}</p>
+      <hr />
+      <img
+        className="avatar"
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        width={100}
+        height={100}
+      />
     </div>
   );
 }
